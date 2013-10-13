@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>No Smoking</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.2.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>No Smoking</h1>
+	</div><!-- /header -->
+
+<script>
+	$( document ).bind( 'mobileinit', function(){
+  $.mobile.loader.prototype.options.text = "loading";
+  $.mobile.loader.prototype.options.textVisible = false;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loader.prototype.options.html = "";
+});
+</script>
+	
+	<div data-role="content">	
+		<p align="justify">Smoking is a practice in which a substance, most commonly tobacco, is burned and the smoke is tasted or inhaled.</p>		
+		<p><center><img src="smoking.png" alt="Say No To Smoking"></center></p>
+		<p align="justify">Smoking is one of the most common forms of recreational drug use. Tobacco smoking is today by far the most popular form of smoking and is practiced by over one billion people in the majority of all human societies. Less common drugs for smoking include cannabis and opium. Some of the substances are classified as hard narcotics, like heroin, but the use of these is very limited as they are often not commercially available.</p>
+	</div><!-- /content -->
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="risks.html">Risks</a></li>
+			<li><a href="quit.html">Quit</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>

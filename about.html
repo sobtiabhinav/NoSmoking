@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>No Smoking</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.2.1.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.2.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>No Smoking</h1>
+	</div><!-- /header -->
+
+<script>
+	$( document ).bind( 'mobileinit', function(){
+  $.mobile.loader.prototype.options.text = "loading";
+  $.mobile.loader.prototype.options.textVisible = false;
+  $.mobile.loader.prototype.options.theme = "a";
+  $.mobile.loader.prototype.options.html = "";
+});
+</script>
+	
+	<div data-role="content">	
+		<p align="justify">The app has been created by students of Maharaja Surajmal Institute Of Technology, New Delhi as a task for "Reformaton" under the IIT Bombay and Techfest.
+		<h3>Contact us at :</h3>
+		<p align = "justify"> Prakriti, the eco-club of MSIT <br />Maharaja Surajmal Institute Of Technology<br />C-4, Janakpuri, <br /> New Delhi - 110058<br/></p>
+		<h3>Email us at :</h3>
+		<p align = "justify"> msitprakriti@gmail.com<br/></p>
+	</div><!-- /content -->
+
+<div data-role="footer" data-id="foo1" data-position="fixed">
+	<div data-role="navbar">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="risks.html">Risks</a></li>
+			<li><a href="quit.html">Quit</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</div><!-- /navbar -->
+</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
